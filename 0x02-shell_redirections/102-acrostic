@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Read input from stdin
+input=$(cat)
+
+# Split input into lines
+IFS=$'\n' read -r -a lines <<< "$input"
+
+# Get first letter of each line and concatenate
+decoded=$(printf "%s" "${lines[@]}" | cut -c1)
+
+# Print decoded message with a newline at the end
+echo -e "$decoded\n"
+
