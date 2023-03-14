@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(echo "ibase=26$(echo "$WATER" | tr 'water' '01234')" + "ibase=26$(echo "$STIR" | tr 'stir.' '01234')" | tr '0123456789' 'bestchol'
+tr 'etarstiw.' '0123456789' <<< $WATER | tr 'etarstiw.' '0123456789' <<< $STIR | tr '0123456789' 'bestchol'
