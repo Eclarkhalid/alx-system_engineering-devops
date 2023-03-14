@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "56EBDEE810CFF32D2BEE" | xxd -r -p | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+echo $(echo "ibase=26;$(echo "$WATER" | tr 'water' '01234')" + "ibase=26;$(echo "$STIR" | tr 'stir.' '01234')" | bc) | tr '0123456789' 'bestchol'
