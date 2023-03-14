@@ -1,2 +1,2 @@
 #!/bin/bash
-tr a-z ${WATER}${STIR} < /dev/urandom | dd bs=1 count=${#WATER} status=none | xxd -p -u
+echo "56EBDEE810CFF32D2BEE" | xxd -r -p | tr 'A-Za-z' 'N-ZA-Mn-za-m'
