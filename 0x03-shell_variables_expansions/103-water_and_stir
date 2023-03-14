@@ -1,0 +1,2 @@
+#!/bin/bash
+tr a-z ${WATER}${STIR} < /dev/urandom | dd bs=1 count=${#WATER} status=none | xxd -p -u
